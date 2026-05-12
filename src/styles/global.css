@@ -1,0 +1,30 @@
+@import "tailwindcss";
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    background: #05070a;
+}
+
+.jp {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+@keyframes spinSlow {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spinSlow 2.5s linear infinite;
+}

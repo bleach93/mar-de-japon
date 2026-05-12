@@ -2,8 +2,9 @@
 import "../styles/global.css";
 ---
 
-<main class="min-h-screen w-full overflow-hidden bg-[#05070A] text-white">
-  <section class="relative min-h-[100svh] overflow-hidden bg-[#05070A]">
+<div class="flex min-h-dvh flex-col bg-[#05070A] text-white">
+  <main class="w-full flex-1 overflow-x-hidden">
+  <section class="relative min-h-screen overflow-hidden bg-[#05070A]">
     <img src="/mar-de-japon/images/sofa.jpg" alt="" class="absolute inset-0 h-full w-full object-cover object-[62%_center] opacity-100 blur-[1px] brightness-110 contrast-110 saturate-150 md:object-[50%_center]" />
     <img src="/mar-de-japon/images/noise-texture.png" alt="" class="pointer-events-none absolute inset-0 z-30 h-full w-full object-cover opacity-[0.18] mix-blend-screen" />
 
@@ -61,8 +62,8 @@ import "../styles/global.css";
   </nav>
 </header>
 
-<div class="relative z-10 flex min-h-[100svh] items-center px-6 pt-20 lg:px-24 lg:pt-0">
-  <div class="w-full max-w-[78vw] lg:ml-[70px] lg:max-w-[420px]">
+<div class="relative z-10 flex min-h-screen items-center px-6 pt-20 lg:px-24 lg:pt-0">
+  <div class="mt-16 w-full max-w-[78vw] lg:mt-13 lg:ml-[70px] lg:max-w-[420px]">
         <h1 class="text-[21vw] font-semibold leading-[0.82] tracking-[-0.07em] text-[#C9A5D8] lg:text-[clamp(4.2rem,7vw,7rem)]">
 			Mar<br />
 			de<br />
@@ -104,7 +105,7 @@ import "../styles/global.css";
       </div>
     </div>
 
-    <p class="absolute left-8 top-[58%] z-20 hidden -translate-y-1/2 -rotate-90 items-center gap-4 text-[10px] uppercase tracking-[0.35em] text-white/55 lg:flex"">
+    <p class="absolute left-8 top-[58%] z-20 hidden -translate-y-1/2 -rotate-90 items-center gap-4 text-[10px] uppercase tracking-[0.35em] text-white/55 lg:flex">
       <span>Mazatl&aacute;n, Sinaloa</span>
       <span class="rotate-90 text-xl leading-none text-white/80">&#10038;</span>
     </p>
@@ -133,8 +134,9 @@ import "../styles/global.css";
 
 		<div class="mx-auto w-full max-w-[340px] text-center lg:mx-0 lg:max-w-none lg:text-left">
         <p class="mb-4 text-[11px] font-bold uppercase tracking-[0.35em] text-[#FF5C7A]">&Uacute;ltimo lanzamiento</p>
-        <h2 class="text-5xl tracking-[-0.04em] text-white/90 lg:text-5xl grid-cols-1 items-center gap-12 lg:grid-cols-[420px_520px] lg:gap-20xl">4bril//Harakiri</h2>
-        <p class="mt-3 text-base text-white/50">Sencillo &#183; 2025</p>
+        <h2 class="text-5xl tracking-[-0.04em] text-white/90 lg:text-5xl">
+  			4bril//Harakiri
+		</h2>
 
         <div class="mx-auto mt-8 w-full max-w-[340px] overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm lg:mx-0 lg:max-w-[460px]">
   			<iframe
@@ -175,9 +177,9 @@ import "../styles/global.css";
   <div class="mt-12 w-full border-t border-white/10">
     {[
       ["01.05", "Durango, MX", "Bruto"],
-      ["05.04", "Mazatl&aacute;n, MX", "Point Gallery"],
+      ["05.04", "Mazatlan, MX", "Point Gallery"],
       ["05.07", "Hermosillo, MX", "London Pub"],
-      ["06.02", "Mazatl&aacute;n, MX", "Azul Cantina Fina"],
+      ["06.02", "Mazatlan, MX", "Azul Cantina Fina"],
     ].map(([date, city, place]) => (
       <div class="grid w-full grid-cols-[95px_1fr] gap-6 border-b border-white/10 py-7 text-[18px] leading-relaxed text-white/80 lg:grid-cols-[70px_1fr_130px] lg:gap-4 lg:py-4 lg:text-sm">
         <span class="font-semibold text-white/95">
@@ -227,7 +229,7 @@ import "../styles/global.css";
 
   <button
   id="prevSlide"
-  	class="absolute left-4 top-1/2 z-20 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-full border border-white/20 bg-black/30 text-white/80 backdrop-blur-sm transition hover:border-[#FF5C7A] hover:text-white"
+  	class="absolute left-4 top-1/2 z-20 grid h-10 w-10 cursor-pointer -translate-y-1/2 place-items-center rounded-full border border-white/20 bg-black/30 text-white/80 backdrop-blur-sm transition hover:border-[#FF5C7A] hover:text-white"
 		>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -246,7 +248,7 @@ import "../styles/global.css";
 		</button>
   <button
   id="nextSlide"
-  class="absolute right-4 top-1/2 z-20 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-full border border-white/20 bg-black/30 text-white/80 backdrop-blur-sm transition hover:border-[#FF5C7A] hover:text-white"
+  class="absolute right-4 top-1/2 z-20 grid h-10 w-10 cursor-pointer -translate-y-1/2 place-items-center rounded-full border border-white/20 bg-black/30 text-white/80 backdrop-blur-sm transition hover:border-[#FF5C7A] hover:text-white"
 >
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -272,7 +274,7 @@ import "../styles/global.css";
     <!-- NUEVO VIDEO -->
     <a
       href="https://www.youtube.com/watch?v=PRbH0w97cks" target = "_blank"
-      class="group relative h-[260px] overflow-hidden bg-black lg:h-[320px]""
+      class="group relative h-[260px] overflow-hidden bg-black lg:h-[320px]"
     >
       <img
   			src="/mar-de-japon/images/sofa.jpg"
@@ -307,7 +309,7 @@ import "../styles/global.css";
     <!-- GALERÍA -->
     <a
       href="https://www.instagram.com/mardejaponn/" target = "_blank"
-      class="group relative h-[260px] overflow-hidden bg-black lg:h-[320px]""
+      class="group relative h-[260px] overflow-hidden bg-black lg:h-[320px]"
     >
       <img
         src="/mar-de-japon/images/PIC2.PNG"
@@ -318,7 +320,7 @@ import "../styles/global.css";
       <div class="absolute inset-0 bg-gradient-to-t from-[#05070A] via-[#05070A]/20 to-transparent"></div>
 
       <div class="absolute bottom-8 left-8 z-10">
-        <p class="mb-3 text-[12px] uppercase tracking-[0.22em] text-white/60 lg:text-[10px]"">
+        <p class="mb-3 text-[12px] uppercase tracking-[0.22em] text-white/60 lg:text-[10px]">
           Galer&iacute;a
         </p>
 
@@ -331,7 +333,7 @@ import "../styles/global.css";
     <!-- PLAYLIST -->
     <a
       href="https://open.spotify.com/artist/72X6FHxaShda0XeQw3vbeF" target="_blank"
-      class="group relative h-[260px] overflow-hidden bg-black lg:h-[320px]""
+      class="group relative h-[260px] overflow-hidden bg-black lg:h-[320px]"
     >
       <img
         src="/mar-de-japon/images/influencias.png"
@@ -342,7 +344,7 @@ import "../styles/global.css";
       <div class="absolute inset-0 bg-gradient-to-t from-[#05070A] via-[#05070A]/20 to-transparent"></div>
 
       <div class="absolute bottom-8 left-8 z-10">
-        <p class="class="mb-3 text-[12px] uppercase tracking-[0.22em] text-white/60 lg:text-[10px]"">
+        <p class="mb-3 text-[12px] uppercase tracking-[0.22em] text-white/60 lg:text-[10px]">
           Playlist
         </p>
 
@@ -355,7 +357,7 @@ import "../styles/global.css";
     <!-- MAR DE JAPON EN VIVO -->
     <a
       href="#tour"
-      class="group relative h-[260px] overflow-hidden bg-black lg:h-[320px]""
+      class="group relative h-[260px] overflow-hidden bg-black lg:h-[320px]"
     >
       <img
         src="/mar-de-japon/images/galeria.PNG"
@@ -367,7 +369,7 @@ import "../styles/global.css";
       <div class="absolute inset-0 bg-[#6b0015]/15 mix-blend-screen"></div>
 
       <div class="absolute bottom-8 left-8 z-10">
-        <p class="class="mb-3 text-[12px] uppercase tracking-[0.22em] text-white/60 lg:text-[10px]">
+        <p class="mb-3 text-[12px] uppercase tracking-[0.22em] text-white/60 lg:text-[10px]">
           Live Session
         </p>
 
@@ -378,113 +380,69 @@ import "../styles/global.css";
     </a>
   </div>
 </section>
-<footer class="relative border-t border-white/10 bg-[#031014] px-7 py-16 lg:px-28">
-	<div class="mx-auto grid max-w-6xl gap-12 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
-    <div>
-      <h2 class="font-['Caveat'] text-7xl text-white/90 lg:text-5xl">
-  		Mar de Japon
-		</h2>
+</main>
 
-      <p class="mt-6 max-w-[320px] text-base leading-8 text-white/50 lg:text-sm lg:leading-7">
+<footer class="relative z-[99999] block w-full max-w-full overflow-visible border-t border-white/10 bg-[#031014] px-5 pt-12 pb-[calc(4rem+env(safe-area-inset-bottom))] text-white sm:px-7 lg:px-28">
+  <div class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
+    <div class="min-w-0 max-w-full">
+      <h2 class="font-['Caveat'] text-5xl leading-none text-white/90 sm:text-6xl lg:text-5xl">
+        Mar de Japon
+      </h2>
+
+      <p class="mt-5 max-w-full text-sm leading-7 text-white/50 sm:max-w-[320px]">
         &ldquo;Canciones para noches largas y pensamientos que no se van.&rdquo;
       </p>
     </div>
 
-    <div class="flex flex-col gap-3 text-sm text-white/60">
-      <p class="mb-4 text-[13px] font-bold uppercase tracking-[0.22em] text-white/45 lg:text-[10px]">
+    <div class="min-w-0 max-w-full">
+      <p class="mb-4 text-[11px] font-bold uppercase tracking-[0.18em] text-white/45">
         Navegaci&oacute;n
       </p>
 
-      <ul class="space-y-3 text-lg text-white/55 lg:space-y-2 lg:text-sm">
-        <li><a class="transition hover:text-[#FF5C7A]" href= "#music">M&uacute;sica</a></li>
-        <li><a class="transition hover:text-[#FF5C7A]" href="#tour"">Tour</a></li>
-        <li><a class="transition hover:text-[#FF5C7A]" href="https://www.youtube.com/channel/UCHfTb3J3Wu5E3xPaDZTk3OA" target="_blank">Videos</a></li>
-        <li><a class="transition hover:text-[#FF5C7A]" href="https://www.instagram.com/mardejaponn/">Galer&iacute;a</a></li>
+      <ul class="space-y-3 text-sm text-white/55">
+        <li><a class="break-words hover:text-[#FF5C7A]" href="#music">M&uacute;sica</a></li>
+        <li><a class="break-words hover:text-[#FF5C7A]" href="#tour">Tour</a></li>
+        <li><a class="break-words hover:text-[#FF5C7A]" href="https://www.youtube.com/channel/UCHfTb3J3Wu5E3xPaDZTk3OA" target="_blank">Videos</a></li>
+        <li><a class="break-words hover:text-[#FF5C7A]" href="https://www.instagram.com/mardejaponn/" target="_blank">Galer&iacute;a</a></li>
       </ul>
     </div>
 
-    <div>
-      <p class="mb-4 text-[10px] font-bold uppercase tracking-[0.28em] text-white/45">
+    <div class="min-w-0 max-w-full">
+      <p class="mb-4 text-[11px] font-bold uppercase tracking-[0.18em] text-white/45">
         Info
       </p>
 
-      <ul class="space-y-2 text-sm text-white/55">
-        <li><a class="transition hover:text-[#FF5C7A]" href="#tour">Mar de Japon en vivo</a></li>
+      <ul class="space-y-3 text-sm text-white/55">
+        <li><a class="break-words hover:text-[#FF5C7A]" href="#tour">Mar de Japon en vivo</a></li>
       </ul>
     </div>
 
-    <div>
-      <div class="flex items-center gap-5 text-white/60">
-  <!-- INSTAGRAM -->
-  <a
-    href="https://www.instagram.com/mardejaponn/" target="_blank"
-    class="transition duration-300 hover:text-[#FF5C7A]"
-    aria-label="Instagram"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.8"
-      stroke="currentColor"
-      class="h-5 w-5"
-    >
-      <rect width="20" height="20" x="2" y="2" rx="5" />
-      <circle cx="12" cy="12" r="4" />
-      <circle cx="18" cy="6" r="1" fill="currentColor" stroke="none" />
-    </svg>
-  </a>
+    <div class="min-w-0 max-w-full">
+      <p class="mb-4 text-[11px] font-bold uppercase tracking-[0.18em] text-white/45">
+        Redes
+      </p>
 
-  <!-- SPOTIFY -->
-  <a
-    href="https://open.spotify.com/intl-es/artist/5bzlKt3NlEeq727cegDzKz" target = "_blank"
-    class="transition duration-300 hover:text-[#FF5C7A]"
-    aria-label="Spotify"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      class="h-5 w-5"
-    >
-      <path
-        d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2Zm4.615 14.446a.75.75 0 0 1-1.03.247c-2.822-1.723-6.375-2.114-10.563-1.163a.75.75 0 1 1-.332-1.463c4.58-1.04 8.51-.593 11.676 1.339a.75.75 0 0 1 .249 1.04Zm1.471-3.273a.938.938 0 0 1-1.288.309c-3.231-1.986-8.157-2.563-11.978-1.403a.938.938 0 0 1-.544-1.795c4.364-1.323 9.79-.684 13.503 1.6a.938.938 0 0 1 .307 1.289Zm.126-3.408c-3.877-2.302-10.277-2.514-13.978-1.398a1.125 1.125 0 1 1-.65-2.154c4.249-1.283 11.312-1.034 15.775 1.616a1.125 1.125 0 1 1-1.147 1.936Z"
-      />
-    </svg>
-  </a>
-
-  <!-- YOUTUBE -->
-  <a
-    href="https://www.youtube.com/@Mardejaponn" target = "_blank"
-    class="transition duration-300 hover:text-[#FF5C7A]"
-    aria-label="YouTube"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="currentColor"
-      viewBox="0 0 24 24"
-      class="h-5 w-5"
-    >
-      <path
-        d="M21.582 6.186a2.506 2.506 0 0 0-1.764-1.774C18.254 4 12 4 12 4s-6.254 0-7.818.412A2.506 2.506 0 0 0 2.418 6.186C2 7.757 2 11 2 11s0 3.243.418 4.814a2.506 2.506 0 0 0 1.764 1.774C5.746 18 12 18 12 18s6.254 0 7.818-.412a2.506 2.506 0 0 0 1.764-1.774C22 14.243 22 11 22 11s0-3.243-.418-4.814ZM10 14.5v-7l6 3.5-6 3.5Z"
-      />
-    </svg>
-  </a>
-</div>
+      <div class="flex max-w-full flex-wrap gap-4 text-sm text-white/60">
+        <a class="break-words hover:text-[#FF5C7A]" href="https://www.instagram.com/mardejaponn/" target="_blank">Instagram</a>
+        <a class="break-words hover:text-[#FF5C7A]" href="https://open.spotify.com/intl-es/artist/5bzlKt3NlEeq727cegDzKz" target="_blank">Spotify</a>
+        <a class="break-words hover:text-[#FF5C7A]" href="https://www.youtube.com/@Mardejaponn" target="_blank">YouTube</a>
       </div>
     </div>
   </div>
 
-  <div class="mx-auto mt-14 flex max-w-6xl flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/35 md:flex-row md:items-center md:justify-between">
-    <p>
-      &copy; 2025 <a class="group relative transition duration-300 hover:text-white" href="https://www.instagram.com/mardejaponn/" target="_blank">Mar de Japon.</a> Programada por <a class="group relative transition duration-300 hover:text-white" href="https://www.instagram.com/_dead_z/" target="_blank">Eduardo Soto.</a>  Todos los derechos reservados.
+  <div class="mx-auto mt-12 flex w-full max-w-6xl flex-col gap-3 border-t border-white/10 pt-6 text-xs leading-6 text-white/35 sm:flex-row sm:items-center sm:justify-between">
+    <p class="min-w-0 max-w-full break-words">
+      &copy; 2025
+      <a class="hover:text-white" href="https://www.instagram.com/mardejaponn/" target="_blank">Mar de Japon.</a>
+      Programada por
+      <a class="hover:text-white" href="https://www.instagram.com/_dead_z/" target="_blank">Eduardo Soto.</a>
+      Todos los derechos reservados.
     </p>
 
-    <p>
-      Sitio oficial
-    </p>
+    <p class="shrink-0">Sitio oficial</p>
   </div>
 </footer>
+</div>
 </main>
 <script>
   const button = document.querySelector("#playSpotify");
